@@ -1,0 +1,39 @@
+{
+  "name": "@agent-friday/intelligence-router",
+  "version": "1.0.0",
+  "description": "Multi-dimensional LLM routing with circuit breakers, budget enforcement, and local-first policies",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "llm-routing",
+    "ai-router",
+    "model-selection",
+    "circuit-breaker",
+    "budget-enforcement",
+    "multi-model",
+    "local-first"
+  ],
+  "author": "FutureSpeakAI",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FutureSpeakAI/agent-fridays-intelligence-router.git"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "devDependencies": {
+    "@types/node": "^25.3.5",
+    "typescript": "^5.9.3"
+  }
+}
