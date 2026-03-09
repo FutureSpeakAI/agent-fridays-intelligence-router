@@ -2,11 +2,24 @@
 
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0%2B-blue.svg)](https://www.typescriptlang.org/)
-[![npm](https://img.shields.io/npm/v/@agent-friday/intelligence-router.svg)](https://www.npmjs.com/package/@agent-friday/intelligence-router)
 
 Automatically routes AI tasks to the optimal language model based on capability matching, cost awareness, latency requirements, and reliability tracking. Features circuit breakers for failing providers, monthly budget enforcement, local-first model policies, and complete audit trails.
 
-Extracted from [Agent Friday](https://github.com/FutureSpeakAI/nexus-os) (AGI Desktop OS) for standalone use.
+Extracted from [Agent Friday](https://github.com/FutureSpeakAI/Agent-Friday) (AGI Desktop OS) for standalone use.
+
+## Why This Matters
+
+If your application uses multiple LLM providers — Claude for reasoning, GPT-4o for vision, a local Llama for simple tasks — you're probably hardcoding which model handles what. That breaks the moment a provider goes down, your budget runs out, or you add a new model.
+
+This router replaces hardcoded model selection with **automatic multi-dimensional scoring**. Every incoming task is classified by category (code, reasoning, creative, factual), complexity, and latency requirements, then scored against every available model across five dimensions: capability match, cost, speed, context window fit, and recent reliability. The highest-scoring model wins.
+
+What makes this different from simple fallback chains:
+- **Circuit breakers** automatically stop routing to models that are failing, and recover when they come back
+- **Budget enforcement** tracks monthly spending and automatically falls back to cheaper models when you're approaching your cap
+- **Local-first policies** give you five granular levels of preference for local models, from "never use" to "always prefer" — so you can run cheap tasks on Llama and expensive tasks on Claude without writing routing logic
+- **Full audit trail** records every routing decision with the complete score breakdown, so you can see exactly why the router chose what it chose
+
+If you're building an AI application that needs to be cost-aware, reliable, and model-agnostic, this handles the routing layer so you can focus on the application logic.
 
 ## Key Features
 
@@ -23,7 +36,7 @@ Extracted from [Agent Friday](https://github.com/FutureSpeakAI/nexus-os) (AGI De
 ## Installation
 
 ```bash
-npm install @agent-friday/intelligence-router
+npm install github:FutureSpeakAI/agent-fridays-intelligence-router
 ```
 
 ## Quick Start
@@ -162,7 +175,7 @@ These are exported for direct use and testing:
 
 ## Origin
 
-This package is extracted from [Agent Friday](https://github.com/FutureSpeakAI/nexus-os), an AGI desktop operating system. The intelligence router is the core decision engine that Agent Friday uses to automatically select the best model for each task.
+This package is extracted from [Agent Friday](https://github.com/FutureSpeakAI/Agent-Friday), an AGI desktop operating system. The intelligence router is the core decision engine that Agent Friday uses to automatically select the best model for each task.
 
 ## License
 
