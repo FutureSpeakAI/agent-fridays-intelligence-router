@@ -5,7 +5,7 @@
 
 Automatically routes AI tasks to the optimal language model based on capability matching, cost awareness, latency requirements, and reliability tracking. Features circuit breakers for failing providers, monthly budget enforcement, local-first model policies, and complete audit trails.
 
-Extracted from [Agent Friday](https://github.com/FutureSpeakAI/Agent-Friday) (AGI Desktop OS) for standalone use.
+Extracted from [Agent Friday](https://github.com/FutureSpeakAI/Agent-Friday) — the world's most trustworthy AI assistant — for standalone use.
 
 ## Why This Matters
 
@@ -175,7 +175,7 @@ These are exported for direct use and testing:
 
 ## Origin
 
-This package is extracted from [Agent Friday](https://github.com/FutureSpeakAI/Agent-Friday), an AGI desktop operating system. The intelligence router is the core decision engine that Agent Friday uses to automatically select the best model for each task.
+This package is extracted from [Agent Friday](https://github.com/FutureSpeakAI/Agent-Friday), the world's most trustworthy AI assistant. The intelligence router is the core decision engine that Agent Friday uses to automatically select the best model for each task.
 
 ## License
 

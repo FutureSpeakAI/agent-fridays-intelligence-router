@@ -1,7 +1,7 @@
 /**
  * Type definitions for Agent Friday's Intelligence Router.
  *
- * Extracted from Agent Friday (AGI Desktop OS).
+ * Extracted from Agent Friday — the world's most trustworthy AI assistant.
  */
 
 export type TaskCategory =

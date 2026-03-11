@@ -10,7 +10,7 @@
  *
  * All routing decisions are logged and queryable.
  *
- * Extracted from Agent Friday (AGI Desktop OS).
+ * Extracted from Agent Friday — the world's most trustworthy AI assistant.
  */
 
 import crypto from 'crypto';
