@@ -1,3 +1,5 @@
+> **This project now lives on in [Agent-Friday](https://github.com/FutureSpeakAI/Agent-Friday), archived 2026-10-11.**
+
 # Agent Friday's Intelligence Router
 
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
